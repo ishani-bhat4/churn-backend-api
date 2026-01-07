@@ -48,7 +48,7 @@ Predicts churn probability and returns model explanations.
   "MonthlyCharges": 70.0,
   "TotalCharges": 1000.0
 }
-Response
+# Response
 
 {
   "churn_probability": 0.067,
@@ -57,7 +57,8 @@ Response
   "top_risk_factors": [...],
   "top_protective_factors": [...]
 }
-🧠 Model Details
+
+**## 🧠 Model Details**
 
 Trained using Scikit-learn
 
@@ -73,11 +74,11 @@ Logistic Regression
 
 Model artifact loaded via joblib
 
-⚙️ Local Development
+## ⚙️ Local Development
 pip install -r requirements.txt
 uvicorn api:app --reload
 
-☁️ Deployment
+## ☁️ Deployment
 
 Hosted on Render (Free Tier)
 
