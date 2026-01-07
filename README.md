@@ -48,8 +48,7 @@ Predicts churn probability and returns model explanations.
   "MonthlyCharges": 70.0,
   "TotalCharges": 1000.0
 }
-# Response
-
+**Response**
 {
   "churn_probability": 0.067,
   "risk": "Low",
@@ -58,43 +57,3 @@ Predicts churn probability and returns model explanations.
   "top_protective_factors": [...]
 }
 
-**## 🧠 Model Details**
-
-Trained using Scikit-learn
-
-Pipeline includes:
-
-ColumnTransformer
-
-StandardScaler
-
-OneHotEncoder
-
-Logistic Regression
-
-Model artifact loaded via joblib
-
-## ⚙️ Local Development
-pip install -r requirements.txt
-uvicorn api:app --reload
-
-## ☁️ Deployment
-
-Hosted on Render (Free Tier)
-
-Uses dynamic $PORT binding
-
-Automatic redeploy on GitHub push
-
-🧪 Health Check
-GET /health
-
-
-Returns:
-
-{"status": "ok"}
-
-👩‍💻 Author
-
-Ishani Bhat
-Built as part of an end-to-end ML systems practice project
